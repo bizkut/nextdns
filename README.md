@@ -12,7 +12,7 @@ You can set NEXTDNS_ID environment variable to use your own Endpoint ID which ca
           - NEXTDNS_ID=abcdef  # (optional) replace with your own Endpoint ID or remove this line
           - NEXTDNS_ARGUMENTS=-listen :5353 -report-client-info -log-queries -cache-size 10MB -max-ttl 5s  # custom CLI options
         ports:
-          - 127.0.0.1:53:5353/udp
+          - 53:5353/udp
         restart: always
 ```
 ## Dockerfile
