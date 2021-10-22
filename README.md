@@ -6,7 +6,7 @@ You can set NEXTDNS_ID environment variable to use your own Endpoint ID which ca
     version: "3"
     services:
       nextdns:
-        image: bizkut/docker-nextdns
+        image: bizkut/nextdns
         container_name: nextdns
         environment:
           - NEXTDNS_ID=abcdef  # (optional) replace with your own Endpoint ID or remove this line
