@@ -23,4 +23,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag bizkut/nextdns:$(date +%s)
     - name: Docker Push
-      run: docker push $DOCKER_USER/nextdns
+      run: docker push bizkut/nextdns
